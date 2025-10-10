@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="javascript" href="js/script.js">
+</head>
+<body>
+
+    <div class="navbar">
+  <img class="logo-pizza" src="images/pizza.png" alt="Logo Pizza">
+
+  <nav class="top-nav">
+    <ul class="nav-list">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="Menu.html">Menu</a></li>
+      <li><a href="#section2">Carte</a></li>
+      <li><a href="index.html#section1">À propos</a></li>
+        <li><a href="#contact-form">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact-info">
+    <img class="red-phone" src="images/red-phone.png" alt="Téléphone">
+    <p class="number-phone">076 780 67 68</p>
+  </div>
+</div>
+
+  <header>
+  
+    <div class="menu-header">
+    <h2 class="menu-titre">Voici notre menu</h2>
+    <h2 class="menu-sous-titre">Nos pizzas</h2>
+    </div>
+ </header>
+ 
+ 
+
+<main>  <!-- contenue de la page des menus -->
+  <div class="pizza-grid">
+    <img src="images/Pizza-margharita.jpg" alt="Pizza-margharita">
+    <img src="images/Pizza-salami.jpg" alt="Pizza-pepperoni">
+    <img src="images/Pizza-diavola.jpg" alt="Pizza-diavola">
+    <img src="images/Pizza-olive-noir.jpg" alt="Pizza-olive-noir">
+    <img src="images/Pizza-thon.jpg" alt="Pizza-thon">
+    <img src="images/Pizza-poivrons.jpg" alt="Pizza-poivrons">
+  </div>
+
+
+  <h2 class="drink-title">Nos boisson</h2>
+  <div class="drink-grid">
+    <img src="images/eau-valais.jpg" alt="eau-valais">
+    <img src="images/7up.jpg" alt="7up">
+    <img src="images/Jus-pomme.jpg" alt="jus-de-pomme">
+
+  </div>
+ 
+    <section id="contact-form">
+    <h2 class="contactez">Contactez-nous</h2>
+    <h2 class="rejoindre">Rejoignez notre équipe !</h2>
+    <p class="texte-pour-rejoindre">Vous êtes passionné(e) par la restauration, le service client ou la cuisine ? 
+    Vous aimez travailler dans une ambiance dynamique et conviviale ? Remplissez le formulaire ci-dessous.
+    </p>
+
+  
+<form action="traitement.php"  method="post">
+
+    <label for="name">Nom :</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject">Sujet :</label>
+    <input type="text" id="subject" name="subject">
+
+    <label for="message">Message :</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    
+    <button class="Envoyer" type="submit">Envoyer</button>
+</form>
+
+<div class="feedback">
+  <div class="form-content">
+  <label for="message">Donnez nous vos avis</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    <button type="submit">Envoyer</button>
+</div>
+</div>
+  </section>
+</main>
+
+
+  <footer class="footer2">
+   <div class="column-menu">
+    <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="Menu.html">Menu</a></li>
+     <li><a href="i#section1">À propos</a></li>
+      <li><a href="#section2">Carte</a></li>
+      <li><a href="#contact-form">Contact</a></li>
+      <li><a href="commande.html">Commander</a></li>
+    </ul>
+
+    </div>
+
+    <div class="horaire">
+      <h2>HORAIRES</h2>
+      <h2>LUNDI - VENDREDI</h2>
+      <p>10H30 à 22H00</p>
+      <h2>SAMEDI - DIMANCHE</h2>
+      <p>10H30 à 23H00</p>
+    </div>
+
+    <div class="contact-links">
+      <ul>
+      <li><a href="#">Conditions</a></li>
+      <li><a href="#contact-form">Rejoignez notre equipe</a></li>
+      <li><a href="#">Reseaux sociaux</a></li>
+    </ul>
+   </div>
+   <div class="copyright">
+       <p>&copy; 2025 Pizzeria Riviera | Site fait par rafisa | Tous droits réservés.</p>
+   </div>
+     <img class="logo-footer" src="images/pizza.png" alt="Logo Pizza">
+  </footer>
+
+  <script src="js/script.js"></script> 
+
+</body>
+</html>
