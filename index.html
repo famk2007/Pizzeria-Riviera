@@ -14,9 +14,12 @@
 
   <nav class="top-nav">
     <ul class="nav-list">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href=".section2">Carte</a></li>
-      <li><a href=".section1">À propos</a></li>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="Menu.html">Menu</a></li>
+     <li><a href="#section1">À propos</a></li>
+      <li><a href="#section2">Carte</a></li>
+      <li><a href="#contact-form">Contact</a></li>
+
     </ul>
   </nav>
 
@@ -31,12 +34,11 @@
   
     <div class="site-header-container"></div>
     <h1 class="title">Pizzeria riviera</h1>
-    <h2 class="sous-titre">Ce n'est pas seulement de la nourriture<br>C'est une experience</h2>
-    <p class="texte-dessous">
-        Bienvenue sur notre page web, Nous sommes un restaurent italien situé à
-         st-légier et nous cuisinons fait maison. par des professionel
-        de la cuisine vaudoise.
-    </p>
+    <h2 class="sous-titre"><span class="surligner">Plus</span> que de la simple cuisine !</h2>
+ 
+
+ <button class="order" onclick="window.location.href='commande.html'">Commandez maintenent</button>
+    <p class="voir">Voir le menu<span class="arrow"> 🠖</span></p>
 
  <img id="Pizza-Reina" class="image" src="images/Pizza-Reina.png" alt="pizza">
 
@@ -50,26 +52,26 @@
   </header>
 
   <main id="content"> 
-    <section class="section1">
-    <h2 id="titre2">Nous vos proposons des services de qualité</h2>
-    <h2 id="service-titre">les meilleurs pizza de la ville</h2>
-    <p id="text-ipsum">Pizza ipsum dolor sit amet, 
-      mozzarella consectetur crust topping. Pepperoni magna aliqua, 
-      ut enim ad marinara sauce. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex cheese commodo.
-       Duis aute rure dolor in reprehenderit in voluptate velit esse cillum dolore eu parmesan. Excepteur sint occaecat 
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est pizza.
-      ut enim ad marinara sauce. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex cheese commodo. Duis aute 
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu parmesan. Excepteur sint occaecat 
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est pizza.
+    <section class="section1" id="section1">
+    <h2 id="titre2">Nous vous proposons des services de qualité</h2>
+    <h2 id="service-titre">les meilleurs<span class="surligner"> pizzas</span> de la ville</h2>
+    <p id="text-ipsum">Nichée au cœur de Blonay–St-Légier, Pizza Riviera est bien plus qu’une simple pizzeria.  
+      Reconnue comme l’une des meilleures pizzerias de la région, elle séduit les gourmets depuis des années.
+       Chaque pizza est préparée avec passion, dans le respect des traditions italiennes.
+      La pâte est fine, croustillante, et les ingrédients sont toujours frais et savoureux. 
+      Le chef, amoureux de la cuisine napolitaine, revisite les classiques avec une touche locale. 
+      La Pizza Riviera propose aussi des créations originales qui changent au fil des saisons. 
+      L’ambiance y est conviviale, idéale pour un repas en famille ou entre amis. 
+      Le service est rapide, attentionné, et toujours avec le sourire. 
+      Pizza Riviera, c’est l’alliance parfaite entre tradition,
+       qualité et générosité. Un vrai trésor culinaire.
 </p>
-
-    <!--<img id="resto" src="images/restaurent.jpg" alt="restaurent">-->
   </section>
 
-  <section class="section2">
+  <section class="section2" id="section2">
     <h2 class="adresse">Notre adresse</h2>
 
-    <iframe 
+    <iframe  
   id="CARTE"
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21976.038291947643!2d6.887065420597062!3d46.48821764857279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e8498af0042f3%3A0x391b0071b458cba1!2s1806%20Saint-L%C3%A9gier-La%20Chi%C3%A9saz!5e0!3m2!1sfr!2sch!4v1756901292170!5m2!1sfr!2sch" 
   width="600" 
@@ -78,45 +80,80 @@
   allowfullscreen="" 
   loading="lazy" 
   referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+</iframe>  <!--Lien vers la carte de st-légier-->
+  </section>
+  
+  <section id="contact-form">
+    <h2 class="contactez">Contactez-nous</h2>
+    <h2 class="rejoindre">Rejoignez notre équipe !</h2>
+    <p class="texte-pour-rejoindre">Vous êtes passionné(e) par la restauration, le service client ou la cuisine ? 
+    Vous aimez travailler dans une ambiance dynamique et conviviale ? Remplissez le formulaire ci-dessous.
+    </p>
+<form action="traitement.php" method="post">
+
+    <label for="name">Nom :</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject">Sujet :</label>
+    <input type="text" id="subject" name="subject">
+
+    <label for="message">Message :</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    
+    <button class="Envoyer" type="submit">Envoyer</button>
+</form>
+
+<div class="feedback">
+  <div class="form-content">
+  <label for="message">Donnez nous vos avis</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    <button type="submit">Envoyer</button>
+</div>
+</div>
   </section>
   </main>
 
 
-  <footer>
-   <div class="column-menu">
+  <footer> 
+   <div class="column-menu"> <!--Lien vers les pages du site dans le footer-->
     <ul>
       <li><a href="index.html">Accueil</a></li>
-      <li><a href="about.html">Carte</a></li>
-      <li><a href=".section1">À propos</a></li>
+    <li><a href="Menu.html">Menu</a></li>
+     <li><a href="#section1">À propos</a></li>
+      <li><a href="#section2">Carte</a></li>
+      <li><a href="#contact-form">Contact</a></li>
+      <li><a href="commande.html">Commander</a></li>
     </ul>
 
     </div>
 
     <div class="horaire">
-      <h2>HORAIRES DE TRAVAIL</h2>
+      <h2>HORAIRES</h2>
       <h2>LUNDI - VENDREDI</h2>
       <p>10H30 à 22H00</p>
       <h2>SAMEDI - DIMANCHE</h2>
       <p>10H30 à 23H00</p>
-      <p>&copy; 2025 Pizzeria riviera. Tous droits réservés.</p>
     </div>
 
-
-  
-     </div>
     <div class="contact-links">
       <ul>
-      <li><a href="#">Mentions</a></li>
-      <li><a href="#">conditions</a></li>
-      <li><a href="#">rejoignez notre equipe</a></li>
-      <li><a href="#">reseaux sociaux</a></li>
+      <li><a href="Mentions.html">Mentions</a></li>
+      <li><a href="#">Conditions</a></li>
+      <li><a href="#contact-form">Rejoignez notre equipe</a></li>
+      <!--Icon des reseaux sociaux-->
     </ul>
    </div>
+   <div class="copyright">
+       <p>&copy; 2025 Pizzeria Riviera | Site fait par rafisa | Tous droits réservés.</p>
+   </div>
+     <img class="logo-footer" src="images/pizza.png" alt="Logo Pizza">
   </footer>
-  </section>
 
+<!--Lien vers script.js-->
   <script src="js/script.js"></script> 
-
+<!--Fin du code-->
 </body>
 </html>

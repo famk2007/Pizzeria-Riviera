@@ -8,14 +8,15 @@
   --Police-Titre: 'Veneer';
   --Police-texte:'Montserrat';
   --fond-clair-2:#c4c4c4;
-  --fond-sombre: linear-gradient(rgba(148, 148, 148, 0.5));
   --red-hover:#ED1A37;
   --border-1:#ccc;
-  --fond-transparent: (rgba(0, 0, 0, 0.5));
+  --orange-hover:#da7f08;
 }
+
 html{
 
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -39,6 +40,7 @@ body
   background-position: center;    /* Centrée */
   color: var(--texte-clair);
   background-color: var(--couleur-primaire);
+
     
 }
 body::before {
@@ -47,7 +49,7 @@ body::before {
   top: 0; left: 0;
   width: 100%; height: 300%;
   background-color: rgba(0, 0, 0, 0.6); /* couche sombre */
-  z-index: 0;
+
 }
 
 h2 {font-family:'Veneer';}
@@ -110,6 +112,8 @@ h2 {font-family:'Veneer';}
 
 .number-phone{  
 display: flex;
+font-family: 'Montserrat';
+font-weight: bold;
 
 
 }
@@ -120,37 +124,66 @@ display: flex;
 .title
 {
 position: absolute;
-top: 85px;
+top: 100px;
 left: 240px;
 font-size: 160px;
 font-family: var(--Police-Titre);
 }
 .sous-titre{
- font-family: var(--Police-Titre);
-font-size: 62px; 
+font-family: var(--Police-Titre);
+font-size:  113px; 
 position: absolute;
-top: 310px;
+top: 300px;
 left: 240px;
+width: 560px;
+white-space: normal; 
 }
-.texte-dessous{
+.surligner{
+  color: var(--red-hover);
+}
+
+.order{
+transition: 0.5s;
 position: absolute;
- font-size: 20px;
-top: 550px;
-left: 230px;
-font-family: var(--Police-texte);
-width: 600px;              
-line-height: 1.6;        
-word-wrap: break-word;     
-white-space: normal;       
-    
+top: 850px;
+left: 220px;
+font-size: 30px;
+z-index: 100;
+border-radius:25px;
+font-family: var(--Police-Titre);
+
+}
+
+.order:hover{
+transform: scale(1.1);
+background-color: var(--orange-hover);
+
+}
+.voir{
+transition: 0.5s;
+position: absolute;
+top: 830px;
+left: 600px;
+font-size: 30px;
+z-index: 100;
+font-family: var(--Police-Titre);
+cursor: pointer;
+}
+.voir:hover{
+color:var(--red-hover)
+}
+
+.arrow::after{
+
+
 }
 
 #Pizza-Reina{  
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 480px;
     position: absolute;
-    top: 400px;
-    right: 280px;
+    top: 380px;
+    right: 260px;
   }
 
 .image {
@@ -202,7 +235,7 @@ border: 1px var(--border-1);
 
 }
 .bouton:hover{
-scale: 1.3;
+scale: 1.2;
 
 
 }
@@ -210,7 +243,7 @@ scale: 1.3;
   font-size: 24px;
   width: 100px;
   position: absolute;
-  top: 850px;
+  top: 860px;
   right: 300px;
 }
 
@@ -219,7 +252,7 @@ scale: 1.3;
   font-size: 24px;
   width: 100px;
   position: absolute;
-  top: 850px;
+  top: 860px;
   right: 600px;
 }
 
@@ -263,54 +296,59 @@ main {
 .section1
 
 {
+display: flex;
+align-items: center;
 position: absolute;
-top: 1100px;
+top: 1000px;
 left: 0px;
 font-size: 60px;
 width: 100%;
-height: 1200px;
+height: 1400px;
 color: var( --texte-clair);
- background-image: url('../images/restaurent.jpg');
-  background-size: cover;
+background-image: url('../images/restaurent.jpg');
+background-size: cover;
 background-position: center;
-  background-repeat: no-repeat;
+background-repeat: no-repeat;
 scroll-margin-top: 80px; /* hauteur du menu fixe */
 z-index: 0;
+
 }
+
 .section1::before {
   content: '';
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* couche sombre */
+  background-color: rgba(0, 0, 0, 0.7); /* couche sombre */
 
  
 }
 
 #service-titre{
 font-size: 130px;
-width: 1000px;
+width: 700px;
 position: absolute;
 top: 00px;
 left: 215px;
-
- 
+margin-top: 130px;
 }
 
 #titre2{
 font-size: 35px;
 position: absolute;
-top: 45px;
+top: 80px;
 left: 215px;
+
 
 }
 
 #text-ipsum{
   font-size: 20px;
-  width: 500px;
+  width: 600px;
   position: absolute;
-  top: 450px;
+  top: 610px;
   left: 215px;
+  margin-top: 10px;
   font-family: 'Montserrat';
 }
 
@@ -357,11 +395,12 @@ left: 830px;
 
 {
 position: absolute;
+margin-top: 90px;
 top: 1950px;
 left: 0px;
 font-size: 60px;
 width: 100%;
-height: 750px;
+height: 900px;
 color: var(--text-foncé);
 background: var(--fond-clair)
 }
@@ -380,6 +419,191 @@ background: var(--fond-clair)
   left: 650px;
  }
 
+ #contact-form{
+  background-image: url('../images/Fond-pate.jpg');
+  background-size: cover;
+  height: 1300px;
+  width: 100%;
+  position: absolute;
+  top: 2900px;
+  left: 0;
+  z-index: 500;
+  overflow: hidden;
+ }
+
+  #contact-form::before{
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 1300px;
+  background-color: rgba(0, 0, 0, 0.7); /* couche sombre */
+  z-index: 0;
+  }
+
+  #contact-form > * {
+    position: relative;
+    z-index: 1;
+  }
+    .contactez{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+
+
+
+  }
+  .rejoindre{
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 75px;
+    color:var(--red-hover);
+  }
+  
+  .texte-pour-rejoindre
+  
+  {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 55px;
+  font-family: var(--Police-texte);
+  text-align: center;
+    white-space: pre-line;
+  }
+
+
+textarea {
+  transform: none;
+}
+
+
+  #contact-form form {
+  position: relative;
+  top: 80px;
+  z-index: 1;
+  max-width: 600px;
+  margin: 0 auto 200px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form label {
+  margin-top: 15px;
+  font-weight: bold;
+  font-family: var(--Police-texte);
+  font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  resize:none;
+}
+
+#contact-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: var(--red-hover);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 500ms;
+  font-family: var(--Police-Titre);
+  font-size: 20px;
+}
+#contact-form button:hover{
+background-color: var(--orange-hover);
+ }
+
+.feedback{
+  margin: 200px auto 0 auto; /* top right bottom left */
+  background-image: url("../images/fond-accueil.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-size:cover ;
+  height: 410px;
+
+
+  
+}
+.feedback::after{
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 1300px;
+  background-color: rgba(255, 255, 255, 0.8); /* couche sombre */
+  z-index: 1;
+
+}
+
+*{
+  box-sizing: border-box;
+}
+.form-content{
+  max-width: 500px;
+  margin: -70px auto 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 200;
+  position: relative;
+ 
+}
+.form-content label{
+
+  font-weight: bold;
+  font-family: var(--Police-texte);
+  text-align: center;
+  color: var(--couleur-secondaire);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.feedback input,
+.feedback textarea
+{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  resize: none;
+}
+
+
+.feedback button{
+  margin:auto;
+  padding: 1px;
+  background-color: var(--red-hover);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: var(--Police-Titre);
+  transition: 500ms;
+  width:  100px;
+
+}
+ .feedback button:hover{
+background-color: var(--orange-hover);
+ }
+
 footer {
   display: flex;
   flex-wrap: nowrap ;
@@ -387,16 +611,16 @@ footer {
   padding: 0 20px;
   justify-content: space-around;
   background-image: url('../images/four-a-pizza.jpg');
-  background-size: cover ;
-  height: 360px;
+  background-size: 100%;
+  height: 300px;
+  background-color: var(--couleur-secondaire);
   background-repeat: no-repeat;
-  color: var(--texte-clair);
   padding: 20px;
   gap: 25px;
   position: absolute;
-  top: 2700px;
+  top: 4200px;
   width: 100%;
-  left: 0;
+  left: 0px;
   list-style: none;
   z-index: 1000;
 
@@ -405,9 +629,10 @@ footer::before{
   content: '';
   position: absolute;
   top: 0; left: 0;
-  width: 102%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* couche sombre */
+  width: 100%; height: 100%;
+   background-color: rgba(0, 0, 0, 0.8); /* couche sombre */
   z-index: 0;
+
 
 }
 
@@ -421,7 +646,10 @@ footer::before{
 .horaire p{
 
   font-family: 'Montserrat';
+   font-weight: bold;
 }
+
+
 
 .column-menu{
   text-align:center;
@@ -431,6 +659,7 @@ footer::before{
   color: var(--texte-clair);
   text-align: start;
    z-index: 1000;
+   font-weight: bold;
 }
 
 .column-menu a{
@@ -446,6 +675,7 @@ footer::before{
 
 .contact-links{
    font-family: 'Montserrat';
+   font-weight: bold;
   padding: 0;
   margin: 0;
   color: var(--texte-clair);
@@ -465,9 +695,51 @@ footer::before{
   color:var(--red-hover);
    transition: 500ms;
 }
+.logo-footer{
+ position: absolute;
+ top: 300px;
+ left:200px;
+ height: 100px;
+    
+}
 
-.flex-grid {
+.copyright{
+  display: flex;
+ position: absolute;
+ top: 300px;
+ background-color: var(--couleur-secondaire);
+ width: 100%;
+ height: 100px;
+ text-align: center;
+ font-family: 'Montserrat';
+font-weight: bold;
+align-items: center;
+justify-content: center;
 
-  display: grid;
-  
+}
+
+/* Page des menus */
+
+ .footer2 {
+   display: flex;
+  flex-wrap: nowrap ;
+  margin: 0 auto;
+  padding: 0 20px;
+  justify-content: space-around;
+  background-image: url('../images/four-a-pizza.jpg');
+  background-size: 100%;
+  height: 300px;
+  background-color: var(--couleur-secondaire);
+  background-repeat: no-repeat;
+  padding: 20px;
+  gap: 25px;
+  position: absolute;
+  top: 2480px;
+  width: 97.5%;
+  list-style: none;
+  z-index: 1000;
+
+}
+#contact-form-menu{
+
 }
