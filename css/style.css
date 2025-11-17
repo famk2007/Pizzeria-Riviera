@@ -11,6 +11,7 @@
   --red-hover:#ED1A37;
   --border-1:#ccc;
   --orange-hover:#da7f08;
+  --gris-clair: #888888;
 }
 
 html{
@@ -109,11 +110,20 @@ h2 {font-family:'Veneer';}
 
 }
 
+a{
+    text-decoration: none;
+}
+a .number-phone{
 
+  color: var(--texte-clair);
+  text-decoration: none;
+  
+}
 .number-phone{  
 display: flex;
 font-family: 'Montserrat';
 font-weight: bold;
+text-decoration: none;
 
 
 }
@@ -160,9 +170,11 @@ background-color: var(--orange-hover);
 
 }
 .voir{
+color: var(--texte-clair);
 transition: 0.5s;
 position: absolute;
-top: 830px;
+display: inline-block;
+top: 860px;
 left: 600px;
 font-size: 30px;
 z-index: 100;
@@ -172,11 +184,20 @@ cursor: pointer;
 .voir:hover{
 color:var(--red-hover)
 }
-
-.arrow::after{
-
-
+ .button-arrow {
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
 }
+
+.voir:hover .button-arrow {
+  transform: translateX(8px); /* La flèche glisse vers la droite */
+}
+
+
+
+
+
 
 #Pizza-Reina{  
     width: 500px;
@@ -410,14 +431,17 @@ background: var(--fond-clair)
   font-size: 130px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
 
 }
- #CARTE{
-  position: absolute;
-  top: 280px;
-  left: 650px;
+
+ iframe{
+position: absolute;
+left: 850px;
+
  }
+
+/* Formulaire de contact*/
 
  #contact-form{
   background-image: url('../images/Fond-pate.jpg');
@@ -484,7 +508,9 @@ background: var(--fond-clair)
 textarea {
   transform: none;
 }
-
+::placeholder{
+  color: var();
+}
 
   #contact-form form {
   position: relative;
@@ -604,6 +630,10 @@ background-color: var(--orange-hover);
 background-color: var(--orange-hover);
  }
 
+/* Fin du formulaire de contact*/
+
+/*Footer bas de la page*/
+
 footer {
   display: flex;
   flex-wrap: nowrap ;
@@ -695,6 +725,16 @@ footer::before{
   color:var(--red-hover);
    transition: 500ms;
 }
+
+.icons {
+  display: flex;
+  flex-direction: column; /* aligne les éléments en colonne */
+  align-items: start;
+  margin-left: 40px;    /* centre horizontalement */
+  gap: 10px;             /* espace entre les icônes */
+  cursor: pointer;
+}
+
 .logo-footer{
  position: absolute;
  top: 300px;
@@ -717,8 +757,9 @@ align-items: center;
 justify-content: center;
 
 }
+/* Fin du footer*/
 
-/* Page des menus */
+/* le footer pour la page des menus */
 
  .footer2 {
    display: flex;
@@ -740,6 +781,4 @@ justify-content: center;
   z-index: 1000;
 
 }
-#contact-form-menu{
-
-}
+/* Fin du code*/

@@ -1,9 +1,79 @@
-body {
- 
-  height: 600px;      /* Hauteur maximale */
+:root {
+
+ --couleur-primaire: #555555;
+  --couleur-secondaire: #000000;
+  --texte-clair: #f9f9f9;
+  --fond-clair: #f9f9f9;
+  --text-foncé:#00000075;
+  --Police-Titre: 'Veneer';
+  --Police-texte:'Montserrat';
+  --fond-clair-2:#c4c4c4;
+  --red-hover:#ED1A37;
+  --border-1:#ccc;
+  --orange-hover:#da7f08;
 }
+
+body, html {
+ 
+    height:  250vh;
+}
+
+.commande {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 100;
+}
+
+.commande h2, .commande h3 {
+  text-align: center;
+  color: var(--red-hover);
+}
+
+.commande h3{
+    font-family: var(--Police-texte);
+}
+
+.commande label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+color: var(--text-foncé);
+}
+
+.commande input, .commande textarea, .commande select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+ .little-checkbox{
+  position: absolute;
+  top: 1005px;
+  right: 35px;
+
+
+
+ }
+
+.commande button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 
 footer{
     position: absolute;
+    top: 2500px;
 
 }

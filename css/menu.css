@@ -1,4 +1,4 @@
- :root {
+:root {
 
  --couleur-primaire: #555555;
   --couleur-secondaire: #000000;
@@ -12,6 +12,10 @@
   --border-1:#ccc;
   --orange-hover:#da7f08;
 }
+
+ body{
+ background-size: 150% 350%;
+ }
  
  .menu-header{
   display: flex;
@@ -35,14 +39,15 @@
   
   }
 
+
   .pizza-grid{
 display: grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(4, 1fr);
 grid-template-rows: repeat(2, auto);
 gap: 80px;
 max-width: 600px;
 position: relative;
-top: 190px;
+top: 180px;
 left:400px;
 z-index: 200;
   }
@@ -55,11 +60,18 @@ z-index: 200;
 
 
   }
-
+  button{
+    font-family:var(--Police-texte);
+    font-size: 16px;
+    transition: 0.5s;
+  }
+  button:hover{
+    background-color: var(--orange-hover);
+  }
     .drink-title{
     position: absolute;
     font-size: 80px;
-    top: 870px;
+    top: 950px;
     left: 785px;
 
     color:var(--red-hover);
@@ -68,23 +80,91 @@ z-index: 200;
   }
   .drink-grid{
 display: grid;
-grid-template-columns: repeat(3,1fr);
-grid-template-rows:1, auto;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: 2, auto;
 max-width: 600px;
 gap: 80px;
 position: relative;
-top: 430px;
-left:400px;
+top: 350px;
+left: 225px;
 
   }
 
- #contact-form{
-    position :absolute !important;
-    top: 1750px !important;
+  .item2{
+    text-align: center;
   }
+
+  .item2 img{
+
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .item2 p{
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: var(--Police-texte);
+    color: var(--texte-clair);
+    font-weight: bold;
+  }
+
+
+  .dessert-titre{
+     position: absolute;
+    font-size: 80px;
+    top: 1700px;
+    left: 785px;
+    color:var(--red-hover);
+
+  }
+
+  .dessert-grid{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: 2, auto;
+max-width: 600px;
+gap: 80px;
+position: relative;
+top: 500px;
+left: 400px;
+  }
+  .item3{
+     text-align: center;
+  }
+
+
+  .item3 img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .item3 p{
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: var(--Police-texte);
+    color: var(--texte-clair);
+    font-weight: bold;
+  }
+
+
+ #contact-form,
+ .menu-contact{
+  position: absolute;
+  top: 335px;
+  width: 2700px;
+  left: 0;
+  background-size: cover;
+  z-index: 500;
+  overflow: hidden;
+
+  }
+
   .footer2 {
     width: 100%;
     position: absolute;
-    top: 3050px;
+    top: 3750px;
   }
 
