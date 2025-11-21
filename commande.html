@@ -1,116 +1,116 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>commander</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/commande.css"> 
+  <link rel="stylesheet" href="css/commande.css">
   <link rel="javascript" href="js/script.js">
 </head>
-<body  class="page-commande">
 
-<div class="navbar">
-  
-  <a href="index.html">
-  <img class="logo-pizza" src="images/pizza.png"  alt="Logo Pizza">
-</a>
-  <nav class="top-nav">
-    <ul class="nav-list">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="Menu.html">Menu</a></li>
-     <li><a href="#section1">À propos</a></li>
-      <li><a href="#section2">Carte</a></li>
-      <li><a href="#contact-form">Contact</a></li>
+<body class="page-commande">
 
-    </ul>
-  </nav>
+  <div class="navbar">
 
-  <div class="contact-info">
-    <img class="red-phone" src="icons/red-phone.png" alt="Téléphone">
-    <p class="number-phone">076 780 67 68</p>
+    <a href="index.html">
+      <img class="logo-pizza" src="images/pizza.png" alt="Logo Pizza">
+    </a>
+    <nav class="top-nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#section1">À propos</a></li>
+        <li><a href="#section2">Carte</a></li>
+        <li><a href="#contact-form">Contact</a></li>
+
+      </ul>
+    </nav>
+
+    <div class="contact-info">
+      <img class="red-phone" src="icons/red-phone.png" alt="Téléphone">
+      <p class="number-phone">076 780 67 68</p>
+    </div>
   </div>
-</div>
 
   <header id="top-page" class="site-header">
-    
- 
 
-    </header>
-    <main>
- <h2 class="form-title">Formulaire de commande</h2>
- 
-<form class="commande" action="traitement.php" method="post">
 
-    <label for="name">Nom :</label>
-    <input type="text" id="name" name="name" required>
 
-    <label for="phone-number">Numéro de téléphone</label>
-    <input type="tel" id="phone-number" name="phone-number" required>
+  </header>
+  <main>
+    <h2 class="form-title">Formulaire de commande</h2>
 
-    <label for="email">Email :</label>
-    <input type="email" id="email" name="email" required>
+    <form class="commande" action="traitement.php" method="post">
 
-    <label for="delivery">Adresse de livraison :</label>
-    <textarea  name="adresse" required></textarea>
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required>
 
-    <label for="message">Message :</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
+      <label for="phone-number">Numéro de téléphone</label>
+      <input type="tel" id="phone-number" name="phone-number" required>
 
-    <h3>Choisissez vos plats :</h3>
-   <label></label>
-    <select name="menu">
-      <option value="Margharita">Pizza-Margharita</option>
-      <option value="Pepperoni">Pizza-Pepperoni</option>
-      <option value="Diavola">Pizza-Diavola</option>
-      <option value="Olive-noir">Pizza Olive noir</option>
-      <option value="Thon">Pizza au Thon</option>
-      <option value="Poivrons">Pizza Poivrons</option>
-      <option value="Raclette">Pizza Raclette</option>
-      <option value="végétarienne">Pizza Végétarienne</option>
-    </select>
-    
-    <h3>Une boisson :</h3>
-    <label></label>
-    <select name="boisson">
-      <option value="Eau">Eau Valais</option>
-      <option value="7up">7up</option>
-      <option value="jus-de-pomme">Jus de pomme More</option>
-      <option value="Lipton-peach">Lipton peach</option>
-      <option value="Lipton-lemon">Lipton lemon</option>
-      <option value="Orangina">Orangina</option>
-      <option value="Redbull">Redbull</option>
-      <option value="Pepsi">Pepsi</option>
-    </select>
-   
-    <label>Mode :</label>
-    <select name="mode">
-      <option value="livraison">livraison</option>
-      <option value="emporter">à emporter</option>
-    </select>
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
 
-    <label>Date souhaitée :</label>
-    <input type="date" name="date" required>
+      <label for="delivery">Adresse de livraison :</label>
+      <textarea name="adresse" required></textarea>
 
-    <label>heure souhaitée :</label>
-    <input type="time" name="heure" required>
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
-    <label><input type="checkbox" class="little-checkbox" required> J'accepte les conditions générales</label><br>
-    <button class="Envoyer" type="submit">Envoyer</button>
-</form>
-    </main>
-     
-    <footer> 
-   <div class="column-menu"> <!--Lien vers les pages du site dans le footer-->
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="about.html">Carte</a></li>
-      <li><a href=".section1">À propos</a></li>
-       <li><a href="#section2">Contact</a></li>
-       <li><a href="index.html#contact-form">Contact</a></li>
+      <h3>Choisissez vos plats :</h3>
+      <label></label>
+      <select name="menu">
+        <option value="Margharita">Pizza-Margharita</option>
+        <option value="Pepperoni">Pizza-Pepperoni</option>
+        <option value="Diavola">Pizza-Diavola</option>
+        <option value="Olive-noir">Pizza Olive noir</option>
+        <option value="Thon">Pizza au Thon</option>
+        <option value="Poivrons">Pizza Poivrons</option>
+        <option value="Raclette">Pizza Raclette</option>
+        <option value="végétarienne">Pizza Végétarienne</option>
+      </select>
 
-    </ul>
+      <h3>Une boisson :</h3>
+      <label></label>
+      <select name="boisson">
+        <option value="Eau">Eau Valais</option>
+        <option value="7up">7up</option>
+        <option value="jus-de-pomme">Jus de pomme More</option>
+        <option value="Lipton-peach">Lipton peach</option>
+        <option value="Lipton-lemon">Lipton lemon</option>
+        <option value="Orangina">Orangina</option>
+        <option value="Redbull">Redbull</option>
+        <option value="Pepsi">Pepsi</option>
+      </select>
 
+      <label>Mode :</label>
+      <select name="mode">
+        <option value="livraison">livraison</option>
+        <option value="emporter">à emporter</option>
+      </select>
+
+      <label>Date souhaitée :</label>
+      <input type="date" name="date" required>
+
+      <label>heure souhaitée :</label>
+      <input type="time" name="heure" required>
+
+      <label><input type="checkbox" class="little-checkbox" required> J'accepte les conditions générales</label><br>
+      <button class="Envoyer" type="submit">Envoyer</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="column-menu"> <!--Lien vers les pages du site dans le footer-->
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">Carte</a></li>
+        <li><a href=".section1">À propos</a></li>
+        <li><a href="menu.html">menu</a></li>
+        <li><a href="index.html#contact-form">Contact</a></li>
+      </ul>
     </div>
 
     <div class="horaire">
@@ -123,22 +123,22 @@
 
     <div class="contact-links">
       <ul>
-      <li><a href="Mentions.html">Mentions</a></li>
-      <li><a href="#">Conditions</a></li>
-      <li><a href="#contact-form">Rejoignez notre equipe</a></li>
-      <!--Icon des reseaux sociaux-->
-    </ul>
-   </div>
-   <div class="copyright">
-       <p>&copy; 2025 Pizzeria Riviera | Site fait par rafisa | Tous droits réservés.</p>
-   </div>
-     <img class="logo-footer" src="images/pizza.png" alt="Logo Pizza">
+        <li><a href="Mentions.html">Mentions</a></li>
+        <li><a href="#">Conditions</a></li>
+        <li><a href="#contact-form">Rejoignez notre equipe</a></li>
+        <!--Icon des reseaux sociaux-->
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Pizzeria Riviera | Site fait par rafisa | Tous droits réservés.</p>
+    </div>
+
+    <img class="logo-footer" src="images/pizza.png" alt="Logo Pizza">
   </footer>
 
-<!--Lien vers script.js-->
-  <script src="js/script.js"></script> 
-<!--Fin du code-->
+  <!--Lien vers script.js-->
+  <script src="js/script.js"></script>
+  <!--Fin du code-->
 </body>
+
 </html>
-
-

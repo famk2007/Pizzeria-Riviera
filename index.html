@@ -1,151 +1,145 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pizzeria Riviera</title>
-  <link rel="stylesheet" href="css/style.css"> 
-  <link rel="javascript" href="js/script.js">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="Accueil">
-<!--la navbar du site-->
-<div class="navbar">
-  <a href="index.html">
-    <!--l'image pour le logo-->
-  <img class="logo-pizza" src="images/pizza.png"  alt="Logo Pizza">
-</a>
-
-  <nav class="top-nav">
-    <ul class="nav-list">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="Menu.html">Menu</a></li>
-     <li><a href="#section1">À propos</a></li>
-      <li><a href="#section2">Carte</a></li>
-      <li><a href="#contact-form">Contact</a></li>
-    </ul>
-  </nav>
-
-  <div class="contact-info">
-    <img class="red-phone" src="icons/red-phone.png" alt="Téléphone">
-    <a href="tel:+41767806768">
-    <p class="number-phone">076 780 67 68</p>
+  <!-- la navbar du site -->
+  <div class="navbar">
+    <a href="index.html">
+      <!--l'image pour le logo-->
+      <img class="logo-pizza" src="images/pizza.png" alt="Logo Pizza">
     </a>
-  </div>
-</div>
 
-<!--le header-->
+    <nav class="top-nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="menu.html">menu</a></li>
+        <li><a href="#section1">À propos</a></li>
+        <li><a href="#section2">Carte</a></li>
+        <li><a href="#contact-form">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="contact-info">
+      <img class="red-phone" src="icons/red-phone.png" alt="Téléphone">
+      <a href="tel:+41767806768">
+        <p class="number-phone">076 780 67 68</p>
+      </a>
+    </div>
+  </div>
+
+  <!--le header-->
   <header id="top-page" class="site-header">
-  
-  
-    <div class="site-header-container"></div>
     <h1 class="title">Pizzeria riviera</h1>
     <h2 class="sous-titre"><span class="surligner">Plus</span> que de la simple cuisine !</h2>
- 
-<!--le bouton  vers la page de commande-->
- <button class="order" onclick="window.location.href='commande.html'">Commandez maintenent</button>
 
- <!--Le bouton vers la page menu et la flèche animer-->
-<a href="Menu.html" class="voir button-arrow">
-  Voir le menu<span class="button-arrow"> 🠖</span>
-</a>
+    <!--le bouton  vers la page de commande-->
+    <button class="order" onclick="window.location.href='commande.html'">Commandez maintenent</button>
+
+    <!--Le bouton vers la page menu et la flèche animer-->
+    <a href="menu.html" class="voir button-arrow">
+      Voir le menu
+      <span class="button-arrow"> 🠖</span>
+    </a>
+
+    <img id="Pizza-Reina" class="image" src="images/Pizza-Reina.png" alt="pizza">
+    <!--Les boutons pour changez d'image-->
+    <div class="controls">
+      <button onclick="suivant()" class="bouton" id="button1">🠖</button>
+      <button onclick="precedent()" class="bouton" id="button2">🠔</button>
+    </div>
 
 
- <img id="Pizza-Reina" class="image" src="images/Pizza-Reina.png" alt="pizza">
-<!--Les boutons pour changez d'image-->
-<div class="controls">
-  <button onclick="suivant()" class="bouton" id="button1">🠖</button>
-  <button onclick="precedent()" class="bouton" id="button2">🠔</button>
-</div>
-
-
-<!--Fin du header-->
+    <!--Fin du header-->
   </header>
 
-<!--La section à propos-->
-  <main id="content"> 
+  <!--La section à propos-->
+  <main id="content">
     <section class="section1" id="section1">
-    <h2 id="titre2">Nous vous proposons des services de qualité</h2>
-    <h2 id="service-titre">les meilleurs<span class="surligner"> pizzas</span> de la ville</h2>
-    <p id="text-ipsum">Nichée au cœur de Blonay–St-Légier, Pizza Riviera est bien plus qu’une simple pizzeria.  
-      Reconnue comme l’une des meilleures pizzerias de la région, elle séduit les gourmets depuis des années.
-       Chaque pizza est préparée avec passion, dans le respect des traditions italiennes.
-      La pâte est fine, croustillante, et les ingrédients sont toujours frais et savoureux. 
-      Le chef, amoureux de la cuisine napolitaine, revisite les classiques avec une touche locale. 
-      La Pizza Riviera propose aussi des créations originales qui changent au fil des saisons. 
-      L’ambiance y est conviviale, idéale pour un repas en famille ou entre amis. 
-      Le service est rapide, attentionné, et toujours avec le sourire. 
-      Pizza Riviera, c’est l’alliance parfaite entre tradition,
-       qualité et générosité. Un vrai trésor culinaire.
-</p>
-  </section>
-<!--Fin de la section à propos-->
+      <h2 id="titre2">Nous vous proposons des services de qualité</h2>
+      <h2 id="service-titre">les meilleurs<span class="surligner"> pizzas</span> de la ville</h2>
+      <p id="text-ipsum">Nichée au cœur de Blonay–St-Légier, Pizza Riviera est bien plus qu’une simple pizzeria.
+        Reconnue comme l’une des meilleures pizzerias de la région, elle séduit les gourmets depuis des années.
+        Chaque pizza est préparée avec passion, dans le respect des traditions italiennes.
+        La pâte est fine, croustillante, et les ingrédients sont toujours frais et savoureux.
+        Le chef, amoureux de la cuisine napolitaine, revisite les classiques avec une touche locale.
+        La Pizza Riviera propose aussi des créations originales qui changent au fil des saisons.
+        L’ambiance y est conviviale, idéale pour un repas en famille ou entre amis.
+        Le service est rapide, attentionné, et toujours avec le sourire.
+        Pizza Riviera, c’est l’alliance parfaite entre tradition,
+        qualité et générosité. Un vrai trésor culinaire.
+      </p>
+    </section>
+    <!--Fin de la section à propos-->
 
-  <section class="section2" id="section2">
-    <h2 class="adresse">Notre adresse</h2>
-<!--Code pour inserer  la carte de Google map-->
-<!--Lien vers la carte de st-légier-->
-<iframe  
-  id="CARTE"
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21976.038291947643!2d6.887065420597062!3d46.48821764857279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e8498af0042f3%3A0x391b0071b458cba1!2s1806%20Saint-L%C3%A9gier-La%20Chi%C3%A9saz!5e0!3m2!1sfr!2sch!4v1756901292170!5m2!1sfr!2sch" 
-  width="600" 
-  height="450" 
-  style="border:0;" 
-  allowfullscreen="" 
-  loading="lazy" 
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>  
-  </section>
+    <section class="section2" id="section2">
+      <h2 class="adresse">Notre adresse</h2>
+      <!--Code pour inserer  la carte de Google map-->
+      <!--Lien vers la carte de st-légier-->
+      <iframe id="CARTE"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21976.038291947643!2d6.887065420597062!3d46.48821764857279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e8498af0042f3%3A0x391b0071b458cba1!2s1806%20Saint-L%C3%A9gier-La%20Chi%C3%A9saz!5e0!3m2!1sfr!2sch!4v1756901292170!5m2!1sfr!2sch"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
 
-  <!--Code pour mettre le formulaire de contact-->
-  <section id="contact-form" class="index-contact">
-    <h2 class="contactez">Contactez-nous</h2>
-    
-    <h2 class="rejoindre">Rejoignez notre équipe !</h2>
-    <p class="texte-pour-rejoindre">Vous êtes passionné(e) par la restauration, le service client ou la cuisine ? 
-    Vous aimez travailler dans une ambiance dynamique et conviviale ? Remplissez le formulaire ci-dessous.
-    </p>
-<form action="php/traitement.php" method="post">
- <!--Pour mettre les champ texte-->
-    <label for="name">Nom :</label>
-    <input type="text" id="name" placeholder="Entrez votre nom complet" name="name" required>
+    <!--Code pour mettre le formulaire de contact-->
+    <section id="contact-form" class="index-contact">
+      <h2 class="contactez">Contactez-nous</h2>
 
-    <label for="email">Email :</label>
-    <input type="email" id="email" placeholder="exemple@domaine.com" name="email" required>
+      <h2 class="rejoindre">Rejoignez notre équipe !</h2>
+      <p class="texte-pour-rejoindre">Vous êtes passionné(e) par la restauration, le service client ou la cuisine ?
+        Vous aimez travailler dans une ambiance dynamique et conviviale ? Remplissez le formulaire ci-dessous.
+      </p>
+      <form action="php/traitement.php" method="post">
+        <!--Pour mettre les champ texte-->
+        <label for="name">Nom :</label>
+        <input type="text" id="name" placeholder="Entrez votre nom complet" name="name" required>
 
-    <label for="tel">Numéro de téléphone</label>
-    <input type="tel" id="tel" placeholder="+41 76 699 77 66" name="tel">
+        <label for="email">Email :</label>
+        <input type="email" id="email" placeholder="exemple@domaine.com" name="email" required>
 
-    <label for="message">Message :</label>
-    <textarea id="message" name="message" placeholder="Écrivez votre message ici..." rows="5" required></textarea>
-    
-    <button class="Envoyer" type="submit">Envoyer</button>
-</form>
-  <!--Fin du formulaire de contact-->
-<div class="feedback">
-  
-  <!--Le champ de texte pour mettre un feeedback-->
-  <div class="form-content">
-  <label for="message">Donnez nous vos avis</label>
-    <textarea id="message" name="message" placeholder="Donnez nous votre feedback ici..."  rows="5" required></textarea>
-    <button type="submit">Envoyer</button>
-</div>
-</div>
-  </section>
-<!--Fin de la section Contact-->
+        <label for="tel">Numéro de téléphone</label>
+        <input type="tel" id="tel" placeholder="+41 76 699 77 66" name="tel">
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" placeholder="Écrivez votre message ici..." rows="5" required></textarea>
+
+        <button class="Envoyer" type="submit">Envoyer</button>
+      </form>
+      <!--Fin du formulaire de contact-->
+      <div class="feedback">
+
+        <!--Le champ de texte pour mettre un feeedback-->
+        <div class="form-content">
+          <label for="message">Donnez nous vos avis</label>
+          <textarea id="message" name="message" placeholder="Donnez nous votre feedback ici..." rows="5"
+            required></textarea>
+          <button type="submit">Envoyer</button>
+        </div>
+      </div>
+    </section>
+    <!--Fin de la section Contact-->
   </main>
 
 
-  <footer> 
-   <div class="column-menu"> <!--Lien vers les pages du site dans le footer-->
-    <ul>
-      <!--Les lien vers les différente page du site-->
-      <li><a href="index.html">Accueil</a></li>
-    <li><a href="Menu.html">Menu</a></li>
-     <li><a href="#section1">À propos</a></li>
-      <li><a href="#section2">Carte</a></li>
-      <li><a href="#contact-form">Contact</a></li>
-      <li><a href="commande.html">Commander</a></li>
-    </ul>
+  <footer>
+    <div class="column-menu"> <!--Lien vers les pages du site dans le footer-->
+      <ul>
+        <!--Les lien vers les différente page du site-->
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#section1">À propos</a></li>
+        <li><a href="#section2">Carte</a></li>
+        <li><a href="#contact-form">Contact</a></li>
+        <li><a href="commande.html">Commander</a></li>
+      </ul>
 
     </div>
 
@@ -159,25 +153,26 @@
 
     <div class="contact-links">
       <ul>
-      <li><a href="Mentions.html">Mentions</a></li>
-      <li><a href="#">Conditions</a></li>
-      <li><a href="#contact-form">Rejoignez notre equipe</a></li>
-        </ul>
+        <li><a href="Mentions.html">Mentions</a></li>
+        <li><a href="#">Conditions</a></li>
+        <li><a href="#contact-form">Rejoignez notre equipe</a></li>
+      </ul>
       <!--Icon des reseaux sociaux-->
       <div class="icons">
-      <img src="icons/instagram-1.svg" id="instagram" alt="instagram" width="24" height="24">
+        <img src="icons/instagram-1.svg" id="instagram" alt="instagram" width="24" height="24">
         <img src="icons/facebook-color.svg" id="facebook" alt="facebook" width="24" height="24">
-          <img src="icons/youtube-color.svg" id="youtube" alt="youtube" width="24" height="24">
-   </div>
-     </div>
-   <div class="copyright">
-       <p>&copy; 2025 Pizzeria Riviera | Site fait par rafisa | Tous droits réservés.</p>
-   </div>
-     <img class="logo-footer" src="images/pizza.png" alt="Logo Pizza">
+        <img src="icons/youtube-color.svg" id="youtube" alt="youtube" width="24" height="24">
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Pizzeria Riviera | Site fait par rafisa | Tous droits réservés.</p>
+    </div>
+    <img class="logo-footer" src="images/pizza.png" alt="Logo Pizza">
   </footer>
 
-<!--Lien vers script.js-->
-  <script src="js/script.js"></script> 
-<!--Fin du code-->
+  <!--Lien vers script.js-->
+  <script src="js/script.js"></script>
+  <!--Fin du code-->
 </body>
+
 </html>
