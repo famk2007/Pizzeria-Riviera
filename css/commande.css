@@ -1,26 +1,34 @@
-:root {
+html, body {
+  margin-top: -80px;           /* enlève les marges par défaut */
+  overflow-y: hidden;  /* cache le scroll vertical */
 
- --couleur-primaire: #555555;
-  --couleur-secondaire: #000000;
-  --texte-clair: #f9f9f9;
-  --fond-clair: #f9f9f9;
-  --text-foncé:#00000075;
-  --Police-Titre: 'Veneer';
-  --Police-texte:'Montserrat';
-  --fond-clair-2:#c4c4c4;
-  --red-hover:#ED1A37;
-  --border-1:#ccc;
-  --orange-hover:#da7f08;
+
 }
 
-body, html {
- 
-    height:  250vh;
+body.page-commande {
+  display: flex;
+  align-items:center ;
+  justify-content:center ;
+
+
+}
+
+
+
+.form-title{
+  text-align: center;
+  color: var( --texte-clair);
+  position: relative;
+  margin: 0 auto;
+  font-size: 100px;
+  margin-top: 200px;
+
 }
 
 .commande {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
+  margin-top: 50px;
   padding: 20px;
   background: #fff;
   border-radius: 10px;
@@ -29,20 +37,19 @@ body, html {
   z-index: 100;
 }
 
-.commande h2, .commande h3 {
-  text-align: center;
-  color: var(--red-hover);
-}
 
-.commande h3{
+ .commande h3{
     font-family: var(--Police-texte);
+    color: var(--red-hover);
+  
 }
 
 .commande label {
   display: block;
   margin-top: 10px;
   font-weight: bold;
-color: var(--text-foncé);
+  font-family:var(--Police-texte);
+  color: var(--text-foncé);
 }
 
 .commande input, .commande textarea, .commande select {
@@ -54,8 +61,8 @@ color: var(--text-foncé);
 }
  .little-checkbox{
   position: absolute;
-  top: 1005px;
-  right: 35px;
+  top: 860px;
+  right: 120px;
 
 
 
@@ -75,5 +82,6 @@ color: var(--text-foncé);
 footer{
     position: absolute;
     top: 2500px;
-
+    margin-bottom: 30px;
+   
 }

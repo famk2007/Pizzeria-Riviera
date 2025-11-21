@@ -1,22 +1,8 @@
-:root {
-
- --couleur-primaire: #555555;
-  --couleur-secondaire: #000000;
-  --texte-clair: #f9f9f9;
-  --fond-clair: #f9f9f9;
-  --text-foncé:#00000075;
-  --Police-Titre: 'Veneer';
-  --Police-texte:'Montserrat';
-  --fond-clair-2:#c4c4c4;
-  --red-hover:#ED1A37;
-  --border-1:#ccc;
-  --orange-hover:#da7f08;
-}
 
  body{
  background-size: 150% 350%;
  }
- 
+
  .menu-header{
   display: flex;
   justify-content: center;
@@ -34,22 +20,26 @@
   .menu-sous-titre{
   position: absolute;
     font-size: 80px;
-    margin-top: 150px;
+    margin-top: 200px;
     color:var(--red-hover);
   
   }
 
 
   .pizza-grid{
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: repeat(2, auto);
-gap: 80px;
-max-width: 600px;
-position: relative;
-top: 180px;
-left:400px;
-z-index: 200;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 80px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-left: 550px;
+  margin-top: 300px;
+  justify-items: center;
+  align-items: center;
+  z-index: 100;   
+  position: relative;
+
   }
 
   .pizza-grid img{
@@ -65,30 +55,36 @@ z-index: 200;
     font-size: 16px;
     transition: 0.5s;
   }
+
   button:hover{
     background-color: var(--orange-hover);
   }
+
     .drink-title{
     position: absolute;
     font-size: 80px;
-    top: 950px;
-    left: 785px;
-
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-left: 1100px;
+    z-index: 100;
     color:var(--red-hover);
-  
-
   }
+
   .drink-grid{
-display: grid;
-grid-template-columns: repeat(4,1fr);
-grid-template-rows: 2, auto;
-max-width: 600px;
-gap: 80px;
-position: relative;
-top: 350px;
-left: 225px;
-
-  }
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 2, auto;
+    max-width: 600px;
+    gap: 80px;
+    margin: 0 auto;
+    margin-left: 550px;
+    margin-top: 200px;
+    justify-items: center;
+    align-items: center;
+    z-index: 100;   
+    position: relative;
+   }
 
   .item2{
     text-align: center;
@@ -111,24 +107,32 @@ left: 225px;
 
 
   .dessert-titre{
-     position: absolute;
+    position: absolute;
     font-size: 80px;
-    top: 1700px;
-    left: 785px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 1100px;
+    z-index: 100;
     color:var(--red-hover);
 
   }
 
   .dessert-grid{
-display: grid;
-grid-template-columns: repeat(4,1fr);
-grid-template-rows: 2, auto;
-max-width: 600px;
-gap: 80px;
-position: relative;
-top: 500px;
-left: 400px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 2, auto;
+    max-width: 600px;
+    gap: 80px;
+    padding-top: 180px;
+    margin: 0 auto;
+    margin-left: 550px;
+    justify-items: center;
+    align-items: center;
+    z-index: 100;   
+    position: relative;
   }
+
   .item3{
      text-align: center;
   }
@@ -150,17 +154,23 @@ left: 400px;
   }
 
 
- #contact-form,
- .menu-contact{
-  position: absolute;
-  top: 335px;
-  width: 2700px;
-  left: 0;
-  background-size: cover;
-  z-index: 500;
-  overflow: hidden;
+ body.Menu #contact-form{
+  position: absolute !important;
+  top: 400px !important;
+  width: 2700px !important;
+  left: -560px;
+  margin-top: 130px;
+  background-size: cover !important;
+  z-index: 500 !important;
+  overflow: hidden !important;
 
   }
+  body #contact-form::before{
+ 
+  background-color: rgba(0, 0, 0, 1); /* couche sombre */
+
+  }
+
 
   .footer2 {
     width: 100%;

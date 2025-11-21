@@ -35,7 +35,7 @@ ul, ol {
 
 body
 {
-   background-image: url('../images/fond-accueil.jpg');
+   background-image: url('../images/BG/fond-accueil.jpg');
   background-size: cover;         /* L’image couvre toute la zone */
   background-repeat: no-repeat;   /* Pas de répétition */
   background-position: center;    /* Centrée */
@@ -326,7 +326,7 @@ font-size: 60px;
 width: 100%;
 height: 1400px;
 color: var( --texte-clair);
-background-image: url('../images/restaurent.jpg');
+background-image: url('../images/BG/restaurent.jpg');
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -443,8 +443,8 @@ left: 850px;
 
 /* Formulaire de contact*/
 
- #contact-form{
-  background-image: url('../images/Fond-pate.jpg');
+body.Accueil #contact-form {
+  background-image: url('../images/BG/Fond-pate.jpg');
   background-size: cover;
   height: 1300px;
   width: 100%;
@@ -556,7 +556,7 @@ background-color: var(--orange-hover);
 
 .feedback{
   margin: 200px auto 0 auto; /* top right bottom left */
-  background-image: url("../images/fond-accueil.jpg");
+  background-image: url("../images/BG/fond-accueil.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -640,7 +640,7 @@ footer {
   margin: 0 auto;
   padding: 0 20px;
   justify-content: space-around;
-  background-image: url('../images/four-a-pizza.jpg');
+  background-image: url('../images/BG/four-a-pizza.jpg');
   background-size: 100%;
   height: 300px;
   background-color: var(--couleur-secondaire);
@@ -767,7 +767,7 @@ justify-content: center;
   margin: 0 auto;
   padding: 0 20px;
   justify-content: space-around;
-  background-image: url('../images/four-a-pizza.jpg');
+  background-image: url('../images/BG/four-a-pizza.jpg');
   background-size: 100%;
   height: 300px;
   background-color: var(--couleur-secondaire);

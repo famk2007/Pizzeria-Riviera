@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css"> 
   <link rel="javascript" href="js/script.js">
 </head>
-<body>
+<body class="Accueil">
 <!--la navbar du site-->
 <div class="navbar">
   <a href="index.html">
@@ -26,7 +26,7 @@
   </nav>
 
   <div class="contact-info">
-    <img class="red-phone" src="images/red-phone.png" alt="Téléphone">
+    <img class="red-phone" src="icons/red-phone.png" alt="Téléphone">
     <a href="tel:+41767806768">
     <p class="number-phone">076 780 67 68</p>
     </a>
@@ -97,14 +97,14 @@
   </section>
 
   <!--Code pour mettre le formulaire de contact-->
-  <section id="contact-form">
+  <section id="contact-form" class="index-contact">
     <h2 class="contactez">Contactez-nous</h2>
     
     <h2 class="rejoindre">Rejoignez notre équipe !</h2>
     <p class="texte-pour-rejoindre">Vous êtes passionné(e) par la restauration, le service client ou la cuisine ? 
     Vous aimez travailler dans une ambiance dynamique et conviviale ? Remplissez le formulaire ci-dessous.
     </p>
-<form action="traitement.php" method="post">
+<form action="php/traitement.php" method="post">
  <!--Pour mettre les champ texte-->
     <label for="name">Nom :</label>
     <input type="text" id="name" placeholder="Entrez votre nom complet" name="name" required>
